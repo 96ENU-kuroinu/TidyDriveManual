@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const versionElements = document.querySelectorAll('#version');
     if (versionElements) {
         versionElements.forEach((versionElement) => {
-            versionElement.textContent = "Ver 1.0.8";
+            versionElement.textContent = "Ver 1.0.9";
         })
     }
 });
