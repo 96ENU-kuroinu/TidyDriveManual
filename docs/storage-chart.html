@@ -5,9 +5,8 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style-notes.css">
-    <link rel="stylesheet" href="./css/details.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📅スケジュール予定/履歴</title>
+    <title>ドライブの使用量表示</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
@@ -45,8 +44,8 @@
             </li>
 
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="./schedules-history.html">
-                    <span itemprop="name">📅スケジュール予定/履歴</span>
+                <a itemprop="item" href="./storage-chart.html">
+                    <span itemprop="name">ドライブの使用量表示</span>
                 </a>
                 <meta itemprop="position" content="2" />
             </li>
@@ -55,73 +54,43 @@
     </header>
 
     <div class="contentsbody">
-        <h1>📅スケジュール予定/履歴</h1>
-        <p>アプリのリリース等に関する作業予定・履歴です。</p>
-        <div class="box-memo">
-            <p>
-                TidyDrive以外のアプリに関するものも記載されています。
-            </p>
-        </div>
-        <p><a
-                href="https://calendar.google.com/calendar/u/0?cid=Y2ZjMGZiNjc2ZDZlNzI1MTg1ZjM3NjY3N2FiMzVmOGVhNzNjNzYyNWY2ZDVjNzI0OTMwZmI1ZjgzOTRhNTRiMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">こちら</a>からご自身のGoogleカレンダーに追加することもできます。
-        </p>
+        <h1><span class="material-symbols-outlined">clock_loader_10</span>ドライブの使用量表示</h1>
 
-        <details class="details">
-            <summary class="summary">スケジュール略称対応表</summary>
-            <div class="content">
+        <p>Misskeyとのアカウントの連携を済ませていると、<span class="hover-text" data-image="images/display-main.png"></span>の<span
+                class="hover-text" data-image="images/display-drawer.png"></span>に、ドライブの使用量についての円グラフが表示されます。</p>
+
+        <div class="screenshots">
+            <a href="./images/display-drawer_framed.png" data-lightbox="storage-chart-group"><img
+                    src="./images/display-drawer_framed.png" alt="" width="35%"></a>
+        </div>
+
+        <ul>
+            <li>「使用量」の扇は、ドライブ全体での割合に応じて以下のように色が変化します。
                 <table class="table-design">
                     <tbody>
                         <tr>
-                            <td class="title-top-left">🥓BJ</td>
+                            <td class="title-top-left">50%未満</td>
+                            <td class="detail-top-right">
+                                <span style="color: #03a9f4;">■</span>青
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">50%以上<br>80%未満</td>
                             <td class="detail">
-                                BaconJam
-                                <ul>
-                                    <li><a
-                                            href="https://play.google.com/store/apps/details?id=com.falhongcha.baconjam">ストアページ</a>
-                                    </li>
-                                    <li><a href="https://96enu-kuroinu.github.io/BaconJamManual/">公式サイトTOP</a></li>
-                                </ul>
+                                <span style="color: orange;">■</span>オレンジ
                             </td>
                         </tr>
                         <tr>
-                            <td class="title">📸IS</td>
-                            <td class="detail">IntervalSnap
-                                <ul>
-                                    <li><a href="https://96enu-kuroinu.github.io/IntervalSnapManual/">公式サイトTOP</a></li>
-                                </ul>
-                                <div class="box-memo">
-                                    <p>
-                                        現在クローズドテスト中です。<br>
-                                        テストへ参加希望の方は、<a href="./inquiry.html">問い合わせ先</a>のいずれかへその旨を併記してgmailアドレスをご連絡ください。
-                                    </p>
-                                </div>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="title-bottom-left">☁TD</td>
-                            <td class="detail-bottom-right">TidyDrive
-                                <ul>
-                                    <li><a href="https://96enu-kuroinu.github.io/TidyDriveManual/">公式サイトTOP</a></li>
-                                </ul>
-                                <div class="box-memo">
-                                    <p>
-                                        現在クローズドテスト中です。<br>
-                                        テストへ参加希望の方は、<a href="./inquiry.html">問い合わせ先</a>のいずれかへその旨を併記してgmailアドレスをご連絡ください。
-                                    </p>
-                                </div>
-
+                            <td class="title-bottom-left">80%以上</td>
+                            <td class="detail-bottom-right">
+                                <span style="color: red;">■</span>赤
                             </td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-        </details>
-
-        <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&bgcolor=%2395cf4a&src=Y2ZjMGZiNjc2ZDZlNzI1MTg1ZjM3NjY3N2FiMzVmOGVhNzNjNzYyNWY2ZDVjNzI0OTMwZmI1ZjgzOTRhNTRiMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%2369a61b"
-            style="max-width: 791px; width: 100%; height: 600px; border-radius: 15px; overflow: hidden;" frameborder="0"
-            scrolling="no"></iframe>
+            </li>
+            <li>「空き容量」の扇は常に <span style="color: #9e9e9e;">■</span>灰色で表示されます。</li>
+        </ul>
 
         <div style="text-align: center;">
             <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="15%" style="cursor: pointer;" onclick="
@@ -131,12 +100,14 @@
     <footer>
         <div id="footer"></div>
     </footer>
+    <script src="./js/generate-text-by-image.js"></script>
     <script src="./js/generate-toc.js"></script>
     <script src="./js/generate-url.js"></script>
     <script src="./js/imgAutoResize.js"></script>
     <script src="./js/load-footer.js"></script>
     <script src="./js/load-last-update-date.js"></script>
     <script src="./js/load-version.js"></script>
+    <script src="./js/to-top.js"></script>
 </body>
 
 </html>

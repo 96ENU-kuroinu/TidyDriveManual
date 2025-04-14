@@ -19,6 +19,16 @@
     <meta name="google-adsense-account" content="ca-pub-2961043635944259">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
         crossorigin="anonymous"></script>
+    <!-- Google Material Symbols -->
+    <!--Outlinedを読み込む-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Roundedを読み込む-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Sharpを読み込む-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -85,19 +95,31 @@
                 <div class="table-container" data-release-date="20250414" data-install-size="25[MB]"></div>
                 <hr class="new">
                 <ul>
-                    <li>「サーバー一覧」画面表示時に、サーバー一覧が取得できなかった場合にエラーコードを画面に表示する機能を追加しました。</li>
-                    <li>「サーバー一覧」画面の「一覧にないサーバーに接続する」ボタンの上下に余白を追加しました。</li>
-                    <li>「MisskeyHubに掲載されていないサーバーの選択用ウィンドウ」に閉じるボタンを追加しました。</li>
-                    <li>「設定」画面にバナー広告を追加しました。</li>
+                    <li><span class="hover-text" data-image="images/display-select-server.png"></span>表示時に、<a
+                            href="https://misskey-hub.net/ja/">MisskeyHub</a>からサーバー一覧が取得できなかった場合にエラーコードを画面に表示する機能を追加しました。
+                    </li>
+                    <li><span class="hover-text" data-image="images/display-select-server.png"></span>の<span
+                            class="button-like-text">一覧にないサーバーに接続する</span>ボタンの上下に余白を追加しました。</li>
+                    <li><span class="hover-text"
+                            data-image="images/display-select-alternative-server.png"></span>に閉じるボタン<span
+                            class="button-like-text"><span class="material-icons"
+                                style="font-size: 1.2em; vertical-align: middle;">close</span></span>を追加しました。</li>
+                    <li><span class="hover-text" data-image="images/display-setting.png"></span>にバナー広告を追加しました。</li>
                 </ul>
                 <hr class="change">
                 <ul>
-                    <li>「MisskeyHubに掲載されていないサーバーの選択用ウィンドウ」の入力フォームのUIを変更しました。</li>
-                    <li>「MisskeyHubに掲載されていないサーバーの選択用ウィンドウ」の確認ダイアログを共通部品に変更しました。</li>
+                    <li><span class="hover-text"
+                            data-image="images/display-select-alternative-server.png"></span>に以下の変更を行いました。</li>
+                    <ul>
+                        <li>入力フォームのUIを変更しました。</li>
+                        <li><span class="button-like-text">OK</span>ボタン押下後に表示される確認ウィンドウを共通部品に変更しました。</li>
+                    </ul>
                 </ul>
                 <hr class="fix">
                 <ul>
-                    <li>「MisskeyHubに掲載されていないサーバーの選択用ウィンドウ」にライトテーマ/ダークテーマの変更が反映されない不具合を修正しました。</li>
+                    <li><span class="hover-text"
+                            data-image="images/display-select-alternative-server.png"></span>にライトテーマ/ダークテーマの変更が反映されない不具合を修正しました。
+                    </li>
                 </ul>
             </div>
         </details>
@@ -148,6 +170,8 @@
                 <hr class="new">
                 <ul>
                     <li>タグでの検索機能(FANBOX支援ユーザー限定)を追加しました。</li>
+                    <li><span class="hover-text" data-image="images/display-drawer.png"></span>に<span class="hover-text"
+                            data-image="images/display-tag-manage.png"></span>への遷移ボタンを追加しました。</li>
                 </ul>
                 <hr class="change">
                 <hr class="fix">
@@ -180,7 +204,9 @@
                 </ul>
                 <hr class="fix">
                 <ul>
-                    <li>ファイルの全選択/全選択解除をしたあと、選択中のファイルの合計サイズが正しく計算されない不具合を修正しました。</li>
+                    <li><span class="hover-text"
+                            data-image="images/display-main.png"></span>でファイルの全選択/全選択解除をしたあと、選択中のファイルの合計サイズが正しく計算されない不具合を修正しました。
+                    </li>
                 </ul>
             </div>
         </details>
@@ -220,7 +246,7 @@
                     <li>以下のウィンドウのプログレスバーを太くしました。<ul>
                             <li>ファイル移動中ウィンドウ</li>
                             <li>ファイル削除中ウィンドウ</li>
-                            <li>フォルダ削除中ウィンドウ</li>
+                            <li>フォルダ移動中ウィンドウ</li>
                         </ul>
                     </li>
                 </ul>
@@ -248,7 +274,7 @@
                     <ul>
                         <li>ファイル移動中ウィンドウ</li>
                         <li>ファイル削除中ウィンドウ</li>
-                        <li>フォルダ削除中ウィンドウ</li>
+                        <li>フォルダ中ウィンドウ</li>
                     </ul>
                 </ul>
                 <hr class="change">
@@ -393,7 +419,7 @@
                 <hr class="change">
                 <ul>
                     <li>Misskeyアカウントの認証方式を<a
-                            href="https://misskey-hub.net/ja/docs/for-developers/api/token/app/">アプリ作成方式</a>から<a
+                            href="https://misskey-hub.net/ja/docs/for-developers/api/token/app/"><code>app/create</code>方式</a>から<a
                             href="https://misskey-hub.net/ja/docs/for-developers/api/token/miauth/"><code>MiAuth</code>方式</a>に変更しました。
                     </li>
                 </ul>
