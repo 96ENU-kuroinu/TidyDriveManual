@@ -13,6 +13,9 @@ function updateSpanText() {
         // Conditional logic to change text based on the data-image value
         let newText = '';
         switch (dataImage) {
+            case 'images/display-initial.png':
+                newText = '初回起動時に表示されるウィンドウ';
+                break;
             case 'images/display-select-server.png':
                 newText = 'サーバー一覧画面';
                 break;
@@ -20,6 +23,7 @@ function updateSpanText() {
                 newText = 'サーバー一覧に掲載されていないサーバーの選択用ウィンドウ';
                 break;
             case 'images/display-setting.png':
+            case 'images/display-setting-no-auth.png':
                 newText = '設定画面';
                 break;
             case 'images/display-main.png':
