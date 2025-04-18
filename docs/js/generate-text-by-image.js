@@ -38,6 +38,9 @@ function updateSpanText() {
             case 'images/display-tag-manage.png':
                 newText = 'タグ管理画面';
                 break;
+            default:
+                newText = '対応する画面名が定義されていません！'
+                break;
         }
 
         // Update the text content of the current span element
