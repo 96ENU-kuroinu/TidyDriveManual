@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-notes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドライブの使用量表示</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
+        type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- google-adsense -->
+    <meta name="google-adsense-account" content="ca-pub-2961043635944259">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
+        crossorigin="anonymous"></script>
+    <!-- Google Material Symbols -->
+    <!--Outlinedを読み込む-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Roundedを読み込む-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Sharpを読み込む-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header style="background-color: #95cf4a;padding: 10px;">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://96enu-kuroinu.github.io/TidyDriveManual/">
+                    <span itemprop="name">🏠TOP</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./theme-change.html">
+                    <span itemprop="name">リスト形式・グリッド形式の変更</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+        <p id="lastUpdated"></p>
+    </header>
+
+    <div class="contentsbody">
+        <h1><span class="material-icons"
+                style="font-size: 1.2em; vertical-align: middle;">preview</span>リスト形式・グリッド形式の変更</h1>
+
+        <ol>
+            <li><span class="hover-text" data-image="images/display-main.png"></span>の<span class="hover-text"
+                    data-image="images/display-drawer.png"></span>で設定を押下してください。</li>
+            <li><span class="hover-text" data-image="images/display-setting.png"></span>の<span
+                    class="button-like-text"><span class="material-icons"
+                        style="font-size: 1.2em; vertical-align: middle;">preview</span>表示形式</span>
+                でラジオボタンを切り替えることで、<span class="hover-text"
+                    data-image="images/display-main.png"></span>を対応する表示形式に変更することができます。
+                <ul>
+                    <li><span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">list</span>リスト
+                    </li>
+                    <li><span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">apps</span>グリッド
+                    </li>
+                </ul>
+                <div class="screenshots">
+                    <a href="./images/display-list-grid1_framed.png" data-lightbox="theme-change-group"><img
+                            src="./images/display-list-grid1_framed.png" alt="" width="35%"></a>
+                    <a href="./images/display-list-grid3_framed.png" data-lightbox="theme-change-group"><img
+                            src="./images/display-list-grid3_framed.png" alt="" width="35%"></a>
+                    <p><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">list</span>リストを選択した場合</p>
+                </div>
+                <div class="screenshots">
+                    <a href="./images/display-list-grid2_framed.png" data-lightbox="theme-change-group"><img
+                            src="./images/display-list-grid2_framed.png" alt="" width="35%"></a>
+                    <a href="./images/display-list-grid4_framed.png" data-lightbox="theme-change-group"><img
+                            src="./images/display-list-grid4_framed.png" alt="" width="35%"></a>
+                    <p><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">apps</span>グリッドを選択した場合</p>
+                </div>
+            </li>
+        </ol>
+
+        <img id="hover-image" src="" alt="画像" style="display:none;">
+
+        <div style="text-align: center;">
+            <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="15%" style="cursor: pointer;" onclick="
+                redirectToRandomUrl()">
+        </div>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script src="./js/generate-text-by-image.js"></script>
+    <script src="./js/generate-toc.js"></script>
+    <script src="./js/generate-url.js"></script>
+    <script src="./js/imgAutoResize.js"></script>
+    <script src="./js/load-footer.js"></script>
+    <script src="./js/load-last-update-date.js"></script>
+    <script src="./js/load-version.js"></script>
+    <script src="./js/show-image.js"></script>
+    <script src="./js/to-top.js"></script>
+</body>
+
+</html>
