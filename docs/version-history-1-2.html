@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-notes.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="./css/hr.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📜バージョン履歴 1.2系</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- google-adsense -->
+    <meta name="google-adsense-account" content="ca-pub-2961043635944259">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
+        crossorigin="anonymous"></script>
+    <!-- Google Material Symbols -->
+    <!--Outlinedを読み込む-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Roundedを読み込む-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Sharpを読み込む-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header style="background-color: #95cf4a;padding: 10px;">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://96enu-kuroinu.github.io/TidyDriveManual/">
+                    <span itemprop="name">🏠TOP</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./version-history.html">
+                    <span itemprop="name">📜バージョン履歴</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./version-history-1-2.html">
+                    <span itemprop="name">📜バージョン履歴 1.2系</span>
+                </a>
+                <meta itemprop="position" content="3" />
+            </li>
+            </li>
+        </ol>
+        <p id="lastUpdated"></p>
+    </header>
+
+    <div class="contentsbody">
+        <h1>📜バージョン履歴 1.2系</h1>
+        <div style="text-align: center;">
+            <p class="button" id="openAllBtn"><a href="JavaScript:void(0)">すべての詳細をひらく</a></p>
+            <p class="button" id="closeAllBtn"><a href="JavaScript:void(0)">すべての詳細をとじる</a></p>
+        </div>
+
+        <!--
+
+        バージョン履歴 1.2系テンプレート
+
+        <details class="details" id="version">
+            <summary class="summary">0.0.0(バージョンコード0)</summary>
+            <div class="content">
+
+                <div class="table-container" data-release-date="20240831" data-install-size="17.4[MB]"></div>
+
+                    <hr class="new">
+                    <hr class="change">
+                    <hr class="fix">
+            </div>
+        </details>
+
+        Google iconテンプレート
+        <span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">iconname</span>
+
+        ボタンテンプレート
+        <span class="button-like-text"></span>
+        -->
+
+        <h2>1.2系(2025年01月01日～)</h2>
+        <p>Misskeyアカウントの認証方式を<a href="https://misskey-hub.net/ja/docs/for-developers/api/token/app/">アプリ作成方式</a>から<a
+                href="https://misskey-hub.net/ja/docs/for-developers/api/token/miauth/"><code>MiAuth</code>方式</a>に変更しました。
+        </p>
+
+        <details class="details" id="version19">
+            <summary class="summary">1.2.3(バージョンコード19)</summary>
+            <div class="content">
+
+                <div class="table-container" data-release-date="20250127" data-install-size="24.5[MB]"></div>
+
+                <hr class="new">
+                <hr class="change">
+                <hr class="fix">
+                <ul>
+                    <li>2つめ以降のサーバーの認証情報が記憶できない不具合を修正しました。</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="details" id="version18">
+            <summary class="summary">1.2.2(バージョンコード18)</summary>
+            <div class="content">
+
+                <div class="table-container" data-release-date="20250114" data-install-size="24.5[MB]"></div>
+
+                <hr class="new">
+                <ul>
+                    <li>インストール後、初回起動時に設定画面への移動を促すダイアログを表示する機能を追加しました。</li>
+                </ul>
+                <hr class="change">
+                <hr class="fix">
+                <ul>
+                    <li>アカウント切り替えボタン同士の間隔が狭い不具合を修正しました。</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="details" id="version17">
+            <summary class="summary">1.2.1(バージョンコード17)</summary>
+            <div class="content">
+
+                <div class="table-container" data-release-date="20250101" data-install-size="24.5[MB]"></div>
+
+                <hr class="new">
+                <hr class="change">
+                <hr class="fix">
+                <ul>
+                    <li>フォルダ情報ウィンドウが表示できない不具合を修正しました。</li>
+                    <li>接続しているアカウントの情報を正しく表示できない不具合を修正しました。</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="details" id="version16">
+            <summary class="summary">1.2.0(バージョンコード16)</summary>
+            <div class="content">
+
+                <div class="table-container" data-release-date="20250101" data-install-size="24.5[MB]"></div>
+
+                <hr class="new">
+                <ul>
+                    <li>新規の「重要なお知らせ」がある場合、アプリ起動時に表示する機能を追加しました。</li>
+                    <li>一度認証したアカウントは、再認証なしでドライブに接続できる機能を追加しました。</li>
+                </ul>
+                <hr class="change">
+                <ul>
+                    <li>Misskeyアカウントの認証方式を<a
+                            href="https://misskey-hub.net/ja/docs/for-developers/api/token/app/"><code>app/create</code>方式</a>から<a
+                            href="https://misskey-hub.net/ja/docs/for-developers/api/token/miauth/"><code>MiAuth</code>方式</a>に変更しました。
+                    </li>
+                </ul>
+                <hr class="fix">
+                <ul>
+                    <li>サーバー選択画面の背景色が常に白い不具合を修正しました。</li>
+                </ul>
+            </div>
+        </details>
+
+        <img id="hover-image" src="" alt="画像" style="display:none;">
+
+        <button id="scrollToTopBtn" title="いちばん上に戻る">▲</button>
+
+        <div style="text-align: center;">
+            <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="15%" style="cursor: pointer;" onclick="
+                redirectToRandomUrl()">
+        </div>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script src="./js/auto-open-details.js"></script>
+    <script src="./js/date-convert.js"></script>
+    <script src="./js/details-open-close.js"></script>
+    <script src="./js/generate-base-information-table.js"></script>
+    <script src="./js/generate-text-by-image.js"></script>
+    <script src="./js/generate-toc.js"></script>
+    <script src="./js/generate-url.js"></script>
+    <script src="./js/generate-version-hint.js"></script>
+    <script src="./js/load-footer.js"></script>
+    <script src="./js/load-last-update-date.js"></script>
+    <script src="./js/load-version.js"></script>
+    <script src="./js/show-image.js"></script>
+    <script src="./js/to-top.js"></script>
+</body>
+
+
+</html>
