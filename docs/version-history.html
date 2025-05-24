@@ -88,6 +88,79 @@
         <h2>1.6系(2025年05月12日～)</h2>
         <p>AGP(Android Gradle Plugin)を<code>8.1.0</code>から<code>8.5.1</code>に更新したため、系を更新しました。</p>
 
+        <details class="details" id="version46">
+            <summary class="summary">1.6.2(バージョンコード46)</summary>
+            <div class="content">
+
+                <div class="table-container" data-release-date="20250524" data-install-size="24.9[MB]"></div>
+
+                <hr class="new">
+                <ul>
+                    <li>ファイル削除時に、そのファイルを添付したノートも削除できる機能を追加しました。
+                    <div class="box-memo">
+                        <p>
+                            機能の利用にはアプリを<code>1.6.2</code>に更新後、Misskeyでの再認証が必要です。
+                        </p>
+                    </div></li>
+                </ul>
+                <hr class="change">
+                <ul>
+                    <li>処理中ウィンドウに表示するファイルのサムネイルの大きさを、以下の規則で切り替えるように変更しました。
+                        <table class="table-design">
+                            <tbody>
+                                <tr>
+                                    <td class="title-top-left">android</td>
+                                    <td class="detail-top-right">
+                                        画面の高さの10%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title-bottom-left">Windows</td>
+                                    <td class="detail-bottom-right">
+                                        ウィンドウの高さの20%
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </li>
+                </ul>
+                <hr class="fix">
+                <ul>
+                    <li>画像系以外のファイルを削除できない不具合を修正しました。</li>
+                    <li>ファイルを選択していない状態でも拡張子トリミングの実行確認ウィンドウが表示される不具合を修正しました。</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="details" id="version45">
+            <summary class="summary">1.6.1(バージョンコード45)</summary>
+            <div class="content">
+
+                <div class="table-container" data-release-date="20250516" data-install-size="24.9[MB]"></div>
+                <hr class="new">
+                <ul>
+                    <li><span class="hover-text" data-image="images/display-main.png"></span>のヘッダーにパンくずリスト表示機能を追加しました。
+                    </li>
+                    <li>以下のウィンドウに処理中のファイルのサムネイルを表示する機能を追加しました。
+                        <ul>
+                            <li>ファイル移動中ウィンドウ</li>
+                            <li>ファイル削除中ウィンドウ</li>
+                            <li>ファイル拡張子トリミング中ウィンドウ</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr class="change">
+                <ul>
+                    <li>ファイルのセンシティブ設定変更時に、変更が不要なセンシティブ設定の状態のファイルはスキップするように処理を変更しました。</li>
+                </ul>
+                <hr class="fix">
+                <ul>
+                    <li>処理中ウィンドウ表示中にアプリをバックグラウンドに切り替えると処理が中止される不具合を修正しました。</li>
+                </ul>
+            </div>
+        </details>
+
         <details class="details" id="version44">
             <summary class="summary">1.6.0(バージョンコード44)</summary>
             <div class="content">
