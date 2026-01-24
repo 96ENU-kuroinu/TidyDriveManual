@@ -8,117 +8,11 @@
     location.href='https://96enu-kuroinu.github.io/';
     }
     </script>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style-notes.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ライトテーマ・ダークテーマの変更</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
-        type="text/javascript"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
-    <!-- Google font Icon -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!-- google-adsense -->
-    <meta name="google-adsense-account" content="ca-pub-2961043635944259">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
-        crossorigin="anonymous"></script>
-    <!-- Google Material Symbols -->
-    <!--Outlinedを読み込む-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!--Roundedを読み込む-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!--Sharpを読み込む-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    <header style="background-color: #95cf4a;padding: 10px;">
-        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="https://96enu-kuroinu.github.io/TidyDriveManual/">
-                    <span itemprop="name">🏠TOP</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
 
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="./theme-change.html">
-                    <span itemprop="name">ライトテーマ・ダークテーマの変更</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-        </ol>
-        <p id="lastUpdated"></p>
-    </header>
-
-    <div class="contentsbody">
-        <h1><span class="material-icons"
-                style="font-size: 1.2em; vertical-align: middle;">mode_night</span>ライトテーマ・ダークテーマの変更</h1>
-
-        <ol>
-            <li><span class="hover-text" data-image="images/display-main.png"></span>の<span class="hover-text"
-                    data-image="images/display-drawer.png"></span>で設定を押下してください。</li>
-            <li><span class="hover-text" data-image="images/display-setting.png"></span>の<span
-                    class="button-like-text"><span class="material-icons"
-                        style="font-size: 1.2em; vertical-align: middle;">mode_night</span>ダークテーマ</span>
-                スイッチを押下することで、ライトテーマ・ダークテーマを切り替えることができます。
-                <div class="screenshots">
-                    <a href="./images/display-theme1_framed.png" data-lightbox="theme-change-group"><img
-                            src="./images/display-theme1_framed.png" alt="" width="35%"></a>
-                    <a href="./images/display-theme2_framed.png" data-lightbox="theme-change-group"><img
-                            src="./images/display-theme2_framed.png" alt="" width="35%"></a>
-                </div>
-            </li>
-        </ol>
-
-        <ul>
-            <li>以下のように色が変化します。
-                <table class="table-design">
-                    <tr>
-                        <td class="invisible"></td>
-                        <td class="title-top-left">文字色</td>
-                        <td class="title-top-right">背景色</td>
-                    </tr>
-                    <tr>
-                        <td class="title-top-left">ライトテーマ</td>
-                        <td>黒<br><code>#000000</code></td>
-                        <td>白<br><code>#FFFFFF</code></td>
-                    </tr>
-                    <tr>
-                        <td class="title-bottom-left">ダークテーマ</td>
-                        <td>白<br><code>#FFFFFF</code></td>
-                        <td class="detail-bottom-right">グレー<br><code>#2F2F2F</code></td>
-                    </tr>
-                </table>
-            </li>
-        </ul>
-
-        <img id="hover-image" src="" alt="画像" style="display:none;">
-
-        <div style="text-align: center;">
-            <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="15%" style="cursor: pointer;" onclick="
-                redirectToRandomUrl()">
-        </div>
-    </div>
-    <footer>
-        <div id="footer"></div>
-    </footer>
-    <script src="./js/generate-text-by-image.js"></script>
-    <script src="./js/generate-toc.js"></script>
-    <script src="./js/generate-url.js"></script>
-    <script src="./js/imgAutoResize.js"></script>
-    <script src="./js/load-footer.js"></script>
-    <script src="./js/load-last-update-date.js"></script>
-    <script src="./js/load-version.js"></script>
-    <script src="./js/show-image.js"></script>
-    <script src="./js/to-top.js"></script>
 </body>
+
 
 </html>
